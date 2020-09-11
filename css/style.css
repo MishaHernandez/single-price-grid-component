@@ -1,0 +1,117 @@
+/* Base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --karla: "Karla", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--karla);
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-gray);
+  height: 100vh;
+}
+
+/* Primary styles */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  width: 85%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px lightgray;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.advert {
+  background-color: #fff;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.advert__title {
+  color: var(--cyan);
+}
+.advert__subtitle {
+  color: var(--bright-yellow);
+  font-size: 16px;
+}
+.advert__paragraph {
+  color: var(--grayish-blue);
+  line-height: 2;
+  font-size: 14px;
+}
+
+.subscribe {
+  background-color: var(--cyan);
+  color: #fff;
+}
+.subscribe__paragraph:nth-of-type(1) {
+  color: var(--light-gray);
+}
+.subscribe__paragraph:nth-of-type(1) span {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 8px;
+}
+.subscribe__button {
+  border-style: none;
+  background-color: var(--bright-yellow);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 6px;
+  color: #fff;
+  box-shadow: 0 10px 10px #269e9d;
+}
+
+.info {
+  background-color: #4ABEBD;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.info__title {
+  color: #fff;
+}
+.info__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.info__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--light-gray);
+  line-height: 1.5;
+}
+
+.advert, .subscribe, .info {
+  padding: 1.5rem;
+}
+
+/* Secundary styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
